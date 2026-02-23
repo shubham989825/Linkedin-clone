@@ -365,3 +365,56 @@ body {
   border-radius: 8px;
   color: gray;
 }
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Avatar Circle */
+.avatar-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #0a66c2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Profile Info */
+.profile-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-email {
+  font-size: 13px;
+  color: gray;
+  margin: 2px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feed-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .profile-card,
+  .create-post-card,
+  .post-card {
+    border-radius: 6px;
+  }
+
+  .avatar-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}

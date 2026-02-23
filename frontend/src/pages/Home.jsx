@@ -56,12 +56,21 @@ const Home = () => {
 
         {/* Welcome Card */}
         <div className="profile-card">
-          <h2>Welcome, {user.name} 👋</h2>
-          <p className="profile-email">{user.email}</p>
-          <p className="profile-bio">
-            {user.bio || "No bio added"}
-          </p>
-        </div>
+  <div className="profile-header">
+    <div className="avatar-circle">
+      {user.name.charAt(0).toUpperCase()}
+    </div>
+
+    <div className="profile-info">
+      <h2>{user.name}</h2>
+      <p className="profile-email">{user.email}</p>
+    </div>
+  </div>
+
+  <p className="profile-bio">
+    {user.bio || "No bio added"}
+  </p>
+</div>
 
         {/* Create Post Card */}
         <div className="create-post-card">
