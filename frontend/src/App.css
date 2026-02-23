@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f2ef;
+}
+
+.container {
+  width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004182;
+}
+/* Home Page */
+.home-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.home-container h1 {
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  padding: 8px 15px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #0a66c2;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  background-color: white;
+  color: #0a66c2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #f3f2ef;
+}
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 24px;
+  color: #0073b1; /* LinkedIn blue */
+  font-weight: bold;
+}
+.nav-links button {
+  margin-left: 10px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0073b1;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-links button:hover {
+  background-color: #005582;
+}
+
+.logout-btn {
+  background-color: #d9534f;
+}
+
+.logout-btn:hover {
+  background-color: #b52b27;
+}
+
+.logout-btn,
+.login-btn,
+.register-btn {
+  padding: 5px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #0073b1;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover,
+.login-btn:hover,
+.register-btn:hover {
+  background-color: #005582;
+}
+
+.auth-buttons {
+  display: flex;
+}
+.create-post-form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  min-height: 60px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.post-btn {
+  align-self: flex-end;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073b1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.post-btn:hover {
+  background-color: #005582;
+}
+/* PostCard styling */
+.post-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.post-user {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0073b1;
+}
+
+.post-content {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #555;
+}
+
+.edit-profile-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.edit-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile-container input,
+.edit-profile-container textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.edit-profile-container button {
+  padding: 8px 12px;
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-profile-container button:hover {
+  background-color: #005582;
+}
+.connections-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.connection-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.connection-card p {
+  margin: 4px 0;
+}
+
+.connection-card button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0073b1;
+  color: white;
+  cursor: pointer;
+}
+
+.connection-card button:hover {
+  background-color: #005582;
+}
+.post-actions {
+  margin-top: 8px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #0073b1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-actions button:hover {
+  text-decoration: underline;
+}
+
+.comments-section {
+  margin-top: 10px;
+}
+
+.comments-section input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 6px;
+}
+
+.comment {
+  font-size: 14px;
+  margin-bottom: 4px;
+  background: #f3f3f3;
+  padding: 5px;
+  border-radius: 4px;
+}
+body {
+  background-color: #f3f2ef;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center layout */
+.main-layout {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feed-container {
+  width: 600px;
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.profile-email {
+  font-size: 13px;
+  color: gray;
+}
+
+.profile-bio {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Create Post */
+.create-post-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Empty feed */
+.empty-feed {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  color: gray;
+}
