@@ -19,17 +19,21 @@ const Login = () => {
         e.preventDefault();
 
         try {
+            console.log("Attempting login to:", API.defaults.baseURL + "/auth/login");
+            console.log("Form data:", form);
+            
             const { data } = await API.post("/auth/login", form);
+            console.log("Login response:", data);
 
             localStorage.setItem("token", data.token);
 
             navigate("/");
         } catch (error) {
-  console.log("FULL ERROR:", error);
-  console.log("RESPONSE:", error.response);
-  console.log("DATA:", error.response?.data);
-  alert(JSON.stringify(error.response?.data));
-}
+            console.log("FULL ERROR:", error);
+            console.log("RESPONSE:", error.response);
+            console.log("DATA:", error.response?.data);
+            alert(JSON.stringify(error.response?.data));
+        }
     };
     return (
     <div className="container">
