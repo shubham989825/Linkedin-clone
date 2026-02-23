@@ -19,11 +19,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            console.log("Attempting login to:", API.defaults.baseURL + "/auth/login");
-            console.log("Form data:", form);
-            
             const { data } = await API.post("/auth/login", form);
-            console.log("Login response:", data);
 
             localStorage.setItem("token", data.token);
 

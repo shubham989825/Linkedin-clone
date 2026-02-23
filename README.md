@@ -12,7 +12,18 @@ Backend: (Add your backend Render link here)
 
 ---
 
-## 📌 Features
+## � Demo Credentials
+
+For testing the application, you can use these default credentials:
+
+**Email:** `shubham12@gmail.com`  
+**Password:** `123456`
+
+*Note: You can also register a new account using the registration page.*
+
+---
+
+## �📌 Features
 
 - 🔐 JWT Authentication (Login / Register)
 - 👤 User Profile with Bio
