@@ -12,13 +12,13 @@ const Connections = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // 1️⃣ Get current user profile
+        //Get current user profile
         const { data: userData } = await API.get("/auth/profile");
         setCurrentUser(userData);
 
-        // 2️⃣ Get all other users
+        //Get all other users
         const { data: allUsers } = await API.get("/users");
-        // Exclude current user
+         
         setUsers(allUsers.filter((u) => u._id !== userData._id));
         setLoading(false);
       } catch (error) {
@@ -31,7 +31,6 @@ const Connections = () => {
     fetchData();
   }, [navigate]);
 
-  // Send connection request
   const handleConnect = async (userId) => {
     try {
       await API.post(`/connections/request/${userId}`);

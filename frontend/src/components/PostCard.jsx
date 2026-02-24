@@ -6,7 +6,7 @@ const PostCard = ({ post }) => {
   const [comments, setComments] = useState(post.comments);
   const [commentText, setCommentText] = useState("");
 
-  // 🔥 Like / Unlike
+   
   const handleLike = async () => {
     try {
       const { data } = await API.put(`/posts/${post._id}/like`);
@@ -16,7 +16,7 @@ const PostCard = ({ post }) => {
     }
   };
 
-  // 💬 Add Comment
+   
   const handleComment = async (e) => {
     e.preventDefault();
     if (!commentText.trim()) return;
@@ -44,14 +44,13 @@ const PostCard = ({ post }) => {
         {new Date(post.createdAt).toLocaleString()}
       </div>
 
-      {/* ❤️ Like Section */}
       <div className="post-actions">
         <button onClick={handleLike}>
           👍 Like ({likes.length})
         </button>
       </div>
 
-      {/* 💬 Comments Section */}
+       
       <div className="comments-section">
         <form onSubmit={handleComment}>
           <input
